@@ -31,14 +31,19 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   e.respondWith(
-    caches.match(e.request).then((res) => {
-      if (res) {
-        console.log("fetching from service worker");
-        return res;
-      } else {
-        console.log("fecthing from live version");
-        fetch(e.request);
-      }
-    })
+    caches
+      .open(cacheVersion)
+      .then(
+        cache.match(e.request).then((res) => {
+          if (res) {
+            console.log("fetching from service worker");
+            return res;
+          } else {
+            console.log("fecthing from live version");
+            fetch(e.request);
+          }
+        })
+      )
+      .catch((err) => console.log("Error" + err))
   );
 });
