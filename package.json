@@ -1,0 +1,14 @@
+{
+  "name": "service_workers",
+  "version": "1.0.0",
+  "description": "tsting service workers",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "ti jhae",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
