@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff; }
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 1rem; }
+  nav ul {
+    list-style: none;
+    display: flex; }
+    nav ul li {
+      padding: 1rem;
+      text-align: center; }
+      nav ul li:hover {
+        padding-bottom: 7px;
+        border-bottom: 3px solid red;
+        cursor: pointer; }
+  nav a {
+    color: #fff;
+    text-decoration: none; }
+
+.billboard {
+  padding: 1rem;
+  height: 600px;
+  background: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .billboard h1 {
+    color: red; }
