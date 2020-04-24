@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "tsting service workers",
   "main": "index.js",
-  "homepage": "https://jhaeti.github.io/serviceworker/index",
+  "homepage": "https://jhaeti.github.io/serviceworker",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
